@@ -1,0 +1,12 @@
+C:\Dev\SistemaCantina\cantinaDaMamãe\Sistema\Cantina\bin\Debug\Cantina.exe.config
+C:\Dev\SistemaCantina\cantinaDaMamãe\Sistema\Cantina\bin\Debug\Cantina.exe
+C:\Dev\SistemaCantina\cantinaDaMamãe\Sistema\Cantina\bin\Debug\Cantina.pdb
+C:\Dev\SistemaCantina\cantinaDaMamãe\Sistema\Cantina\obj\Debug\Cantina.csproj.AssemblyReference.cache
+C:\Dev\SistemaCantina\cantinaDaMamãe\Sistema\Cantina\obj\Debug\Cantina.Properties.Resources.resources
+C:\Dev\SistemaCantina\cantinaDaMamãe\Sistema\Cantina\obj\Debug\Cantina.csproj.GenerateResource.cache
+C:\Dev\SistemaCantina\cantinaDaMamãe\Sistema\Cantina\obj\Debug\Cantina.csproj.CoreCompileInputs.cache
+C:\Dev\SistemaCantina\cantinaDaMamãe\Sistema\Cantina\obj\Debug\Cantina.exe
+C:\Dev\SistemaCantina\cantinaDaMamãe\Sistema\Cantina\obj\Debug\Cantina.pdb
+C:\Dev\SistemaCantina\cantinaDaMamãe\Sistema\Cantina\obj\Debug\Sistema.frm_categorias.resources
+C:\Dev\SistemaCantina\cantinaDaMamãe\Sistema\Cantina\obj\Debug\Cantina.frm_menu.resources
+C:\Dev\SistemaCantina\cantinaDaMamãe\Sistema\Cantina\obj\Debug\Cantina.frm_produto.resources

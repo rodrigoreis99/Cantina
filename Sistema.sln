@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cantina", "Cantina\Cantina.csproj", "{BDD9C3E7-859D-4896-BD83-07D2A4164E4E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDD9C3E7-859D-4896-BD83-07D2A4164E4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDD9C3E7-859D-4896-BD83-07D2A4164E4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDD9C3E7-859D-4896-BD83-07D2A4164E4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDD9C3E7-859D-4896-BD83-07D2A4164E4E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {38D5FC09-6105-4EBE-B807-BA9FD40A038D}
+	EndGlobalSection
+EndGlobal
