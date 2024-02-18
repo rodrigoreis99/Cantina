@@ -1,0 +1,7 @@
+C:\Dev\SistemaCantina\cantinaDaMamãe\Sistema\cantina.DAL\bin\Debug\cantina.DAL.dll.config
+C:\Dev\SistemaCantina\cantinaDaMamãe\Sistema\cantina.DAL\bin\Debug\cantina.DAL.dll
+C:\Dev\SistemaCantina\cantinaDaMamãe\Sistema\cantina.DAL\bin\Debug\cantina.DAL.pdb
+C:\Dev\SistemaCantina\cantinaDaMamãe\Sistema\cantina.DAL\obj\Debug\cantina.DAL.csproj.AssemblyReference.cache
+C:\Dev\SistemaCantina\cantinaDaMamãe\Sistema\cantina.DAL\obj\Debug\cantina.DAL.csproj.CoreCompileInputs.cache
+C:\Dev\SistemaCantina\cantinaDaMamãe\Sistema\cantina.DAL\obj\Debug\cantina.DAL.dll
+C:\Dev\SistemaCantina\cantinaDaMamãe\Sistema\cantina.DAL\obj\Debug\cantina.DAL.pdb

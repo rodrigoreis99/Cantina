@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using sistema.DAL;
+using cantina.DAL;
 
 namespace Sistema
 {
@@ -30,14 +30,11 @@ namespace Sistema
 
         private void btn_cadastrar_Click(object sender, EventArgs e)
         {
-
             if (this.valida())
             {
-
                 this.categoriaBindingSource.EndEdit();
                 DataContextFactory.DataContext.SubmitChanges();
                 MessageBox.Show("Categoria Inserida com sucesso!");
-
             }
         }
 
@@ -52,30 +49,24 @@ namespace Sistema
             return true;
         }
 
-
         private void btn_excluir_Click(object sender, EventArgs e)
         {
-
             if (MessageBox.Show("Tem certeza", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 if (this.CategoriaPossuiProduto(this.categoriaAtual))
                     MessageBox.Show("Você não pode excluir essa categoria, porque existe produtos nela");
                 else
                 {
-
                     this.categoriaBindingSource.RemoveCurrent();
                     DataContextFactory.DataContext.SubmitChanges();
                     MessageBox.Show("Categoria excluida com sucesso!");
-
                 }
             }
         }
-
         private void btn_cancelar_Click(object sender, EventArgs e)
         {
             this.categoriaBindingSource.CancelEdit();
         }
-
 
         public Categoria categoriaAtual
         {
@@ -84,16 +75,13 @@ namespace Sistema
                 return (Categoria)this.categoriaBindingSource.Current;
             }
         }
-
         private bool CategoriaPossuiProduto(Categoria categoria)
         {
-            var produtos = DataContextFactory.DataContext.Produto.Where(x => x.id_categoria == categoria.id_categoria);
+            var produtos = DataContextFactory.DataContext.Produto.Where(x => x.CodigoCategoria == categoria.Codigo);
             if (produtos.Count() > 0)
                 return true;
             else
                 return false;
         }
-
-
-    }
+    }   
 }

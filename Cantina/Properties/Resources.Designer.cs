@@ -63,9 +63,29 @@ namespace Cantina.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap baby64 {
+            get {
+                object obj = ResourceManager.GetObject("baby64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cad_produtos_40x40 {
             get {
                 object obj = ResourceManager.GetObject("cad_produtos 40x40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cadastro_clientes_40_x_40 {
+            get {
+                object obj = ResourceManager.GetObject("cadastro clientes 40 x 40", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

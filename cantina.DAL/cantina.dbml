@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="db_cantina" Class="cantinaDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-734TALC;Initial Catalog=db_cantina;Integrated Security=True;Encrypt=False;Trust Server Certificate=True" SettingsObjectName="cantina.DAL.Properties.Settings" SettingsPropertyName="db_cantinaConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tb_aluno" Member="Aluno">
+    <Type Name="Aluno">
+      <Column Name="id_aluno" Member="Codigo" Storage="_id_aluno" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nome_aluno" Member="Nome" Storage="_nome_aluno" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="serie_aluno" Member="Serie" Storage="_serie_aluno" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="pai_aluno" Member="Responsavel" Storage="_pai_aluno" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="contato_pai" Member="ContatoResp" Storage="_contato_pai" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Aluno_Venda" Member="Venda" Storage="_tb_venda" ThisKey="Codigo" OtherKey="CodigoAluno" Type="Venda" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_categoria" Member="Categoria">
+    <Type Name="Categoria">
+      <Column Name="id_categoria" Member="Codigo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="desc_categoria" Member="Descricao" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Categoria_Produto" Member="Produto" ThisKey="Codigo" OtherKey="CodigoCategoria" Type="Produto" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_contas_receber" Member="ContasReceber">
+    <Type Name="ContasReceber">
+      <Column Name="id_conta" Member="CodigoConta" Storage="_id_conta" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="data_compra" Member="DataCompra" Storage="_data_compra" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="data_vencimento" Member="DataVencimento" Storage="_data_vencimento" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="data_pagamento" Member="DataPagamento" Storage="_data_pagamento" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="id_venda" Member="CodigoVenda" Storage="_id_venda" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_status" Member="CodigoStatus" Storage="_id_status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="tb_status_tb_contas_receber" Member="StatusPagamento" Storage="_tb_status" ThisKey="CodigoStatus" OtherKey="Codigo" Type="StatusPagamento" IsForeignKey="true" />
+      <Association Name="Venda_tb_contas_receber" Member="Venda" Storage="_tb_venda" ThisKey="CodigoVenda" OtherKey="CodigoVenda" Type="Venda" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_itens_venda" Member="ItensVenda">
+    <Type Name="ItensVenda">
+      <Column Name="quantidade" Member="Quantidade" Storage="_quantidade" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="id_produto" Member="CodigoProduto" Storage="_id_produto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="id_venda" Member="CodigoVenda" Storage="_id_venda" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="valor" Member="Valor" Storage="_valor" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="id_item" Member="CodigoItem" Storage="_id_item" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Association Name="Produto_ItensVenda" Member="Produto" ThisKey="CodigoProduto" OtherKey="Codigo" Type="Produto" IsForeignKey="true" />
+      <Association Name="Venda_ItensVenda" Member="Venda" Storage="_tb_venda" ThisKey="CodigoVenda" OtherKey="CodigoVenda" Type="Venda" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_produtos" Member="Produto">
+    <Type Name="Produto">
+      <Column Name="id_produto" Member="Codigo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="desc_produto" Member="Descricao" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="valor" Member="Valor" Type="System.Decimal" DbType="Decimal(25,2)" CanBeNull="true" />
+      <Column Name="id_categoria" Member="CodigoCategoria" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Produto_ItensVenda" Member="ItensVenda" Storage="_tb_itens_venda" ThisKey="Codigo" OtherKey="CodigoProduto" Type="ItensVenda" />
+      <Association Name="Categoria_Produto" Member="Categoria" ThisKey="CodigoCategoria" OtherKey="Codigo" Type="Categoria" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_status" Member="StatusPagamento">
+    <Type Name="StatusPagamento">
+      <Column Name="id_status" Member="Codigo" Storage="_id_status" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="status" Member="Status" Storage="_status" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="tb_status_tb_contas_receber" Member="ContasReceber" Storage="_tb_contas_receber" ThisKey="Codigo" OtherKey="CodigoStatus" Type="ContasReceber" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_venda" Member="Venda">
+    <Type Name="Venda">
+      <Column Name="id_venda" Member="CodigoVenda" Storage="_id_venda" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="valor" Member="Valor" Storage="_valor" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="desconto" Member="Desconto" Storage="_desconto" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="valor_pago" Member="ValorPago" Storage="_valor_pago" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="id_pessoa" Member="CodigoAluno" Storage="_id_pessoa" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Venda_tb_contas_receber" Member="ContasReceber" Storage="_tb_contas_receber" ThisKey="CodigoVenda" OtherKey="CodigoVenda" Type="ContasReceber" />
+      <Association Name="Venda_ItensVenda" Member="ItensVenda" Storage="_tb_itens_venda" ThisKey="CodigoVenda" OtherKey="CodigoVenda" Type="ItensVenda" />
+      <Association Name="Aluno_Venda" Member="Aluno" Storage="_tb_aluno" ThisKey="CodigoAluno" OtherKey="Codigo" Type="Aluno" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

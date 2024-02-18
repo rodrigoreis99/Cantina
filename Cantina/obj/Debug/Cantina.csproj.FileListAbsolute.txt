@@ -9,4 +9,11 @@ C:\Dev\SistemaCantina\cantinaDaMamãe\Sistema\Cantina\obj\Debug\Cantina.exe
 C:\Dev\SistemaCantina\cantinaDaMamãe\Sistema\Cantina\obj\Debug\Cantina.pdb
 C:\Dev\SistemaCantina\cantinaDaMamãe\Sistema\Cantina\obj\Debug\Sistema.frm_categorias.resources
 C:\Dev\SistemaCantina\cantinaDaMamãe\Sistema\Cantina\obj\Debug\Cantina.frm_menu.resources
-C:\Dev\SistemaCantina\cantinaDaMamãe\Sistema\Cantina\obj\Debug\Cantina.frm_produto.resources
+C:\Dev\SistemaCantina\cantinaDaMamãe\Sistema\Cantina\obj\Debug\Cantina.frm_produtos.resources
+C:\Dev\SistemaCantina\cantinaDaMamãe\Sistema\Cantina\bin\Debug\cantina.DAL.dll
+C:\Dev\SistemaCantina\cantinaDaMamãe\Sistema\Cantina\bin\Debug\cantina.DAL.pdb
+C:\Dev\SistemaCantina\cantinaDaMamãe\Sistema\Cantina\bin\Debug\cantina.DAL.dll.config
+C:\Dev\SistemaCantina\cantinaDaMamãe\Sistema\Cantina\obj\Debug\Cantina.csproj.CopyComplete
+C:\Dev\SistemaCantina\cantinaDaMamãe\Sistema\Cantina\obj\Debug\Cantina.frm_aluno.resources
+C:\Dev\SistemaCantina\cantinaDaMamãe\Sistema\Cantina\obj\Debug\Cantina.frm_consultaProdutos.resources
+C:\Dev\SistemaCantina\cantinaDaMamãe\Sistema\Cantina\obj\Debug\Cantina.frm_venda.resources

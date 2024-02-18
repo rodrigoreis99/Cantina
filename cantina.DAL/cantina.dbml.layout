@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.875" name="cantina">
+  <DataContextMoniker Name="/cantinaDataContext" />
+  <nestedChildShapes>
+    <classShape Id="c358f324-356a-45c5-9202-abd2e7baf663" absoluteBounds="0.75, 3.875, 2, 1.7708968098958326">
+      <DataClassMoniker Name="/cantinaDataContext/Aluno" />
+      <nestedChildShapes>
+        <elementListCompartment Id="151349f4-ff52-4a78-bae9-75688712851d" absoluteBounds="0.765, 4.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9f824e6d-9c6b-457b-b603-a289fda7e6a0" absoluteBounds="0.75, 7.125, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/cantinaDataContext/Categoria" />
+      <nestedChildShapes>
+        <elementListCompartment Id="270b74af-c461-4b68-9efd-8762f8a97e93" absoluteBounds="0.765, 7.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4fc1c5fc-9a40-4953-af82-b8f3d51ff546" absoluteBounds="6.25, 0.75, 2, 1.9631982421875">
+      <DataClassMoniker Name="/cantinaDataContext/ContasReceber" />
+      <nestedChildShapes>
+        <elementListCompartment Id="80628f9c-10ad-46f2-b081-c627bbad9659" absoluteBounds="6.265, 1.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f2ee17a2-d864-47ae-b2ae-295f96465f56" absoluteBounds="6.25, 3.875, 2, 1.7708968098958326">
+      <DataClassMoniker Name="/cantinaDataContext/ItensVenda" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8b922d86-8d47-4115-887f-a16febdb0e40" absoluteBounds="6.265, 4.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="79cce277-62cf-4811-9e0d-6a75e8a3a247" absoluteBounds="3.5, 7, 2, 1.5785953776041657">
+      <DataClassMoniker Name="/cantinaDataContext/Produto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="08be46d1-9808-4c79-be3e-18b082550332" absoluteBounds="3.515, 7.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="69144ffc-008b-4b25-8207-2d6671e226d0" absoluteBounds="3.5, 1.625, 2, 1.1939925130208338">
+      <DataClassMoniker Name="/cantinaDataContext/StatusPagamento" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6ef6d812-feaf-44df-814a-9ef623de4f63" absoluteBounds="3.515, 2.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cfc0a1d0-79f2-48f8-9309-0174fb5d1ee0" absoluteBounds="3.5, 3.875, 2, 1.7708968098958326">
+      <DataClassMoniker Name="/cantinaDataContext/Venda" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3be613a8-5ed6-42e3-8fb8-1d72f32d0fe1" absoluteBounds="3.515, 4.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 2.16909912109375); (6.25 : 2.16909912109375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/cantinaDataContext/StatusPagamento/tb_status_tb_contas_receber" />
+      <nodes>
+        <classShapeMoniker Id="69144ffc-008b-4b25-8207-2d6671e226d0" />
+        <classShapeMoniker Id="4fc1c5fc-9a40-4953-af82-b8f3d51ff546" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 7.72199625651042); (3.5 : 7.72199625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/cantinaDataContext/Categoria/Categoria_Produto" />
+      <nodes>
+        <classShapeMoniker Id="9f824e6d-9c6b-457b-b603-a289fda7e6a0" />
+        <classShapeMoniker Id="79cce277-62cf-4811-9e0d-6a75e8a3a247" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 3.875); (5.875 : 3.5); (5.875 : 1.73159912109375); (6.25 : 1.73159912109375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/cantinaDataContext/Venda/Venda_tb_contas_receber" />
+      <nodes>
+        <classShapeMoniker Id="cfc0a1d0-79f2-48f8-9309-0174fb5d1ee0" />
+        <classShapeMoniker Id="4fc1c5fc-9a40-4953-af82-b8f3d51ff546" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.76044840494792); (3.5 : 4.76044840494792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/cantinaDataContext/Aluno/Aluno_Venda" />
+      <nodes>
+        <classShapeMoniker Id="c358f324-356a-45c5-9202-abd2e7baf663" />
+        <classShapeMoniker Id="cfc0a1d0-79f2-48f8-9309-0174fb5d1ee0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 7.78929768880208); (7.25 : 7.78929768880208); (7.25 : 5.64589680989583)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/cantinaDataContext/Produto/Produto_ItensVenda" />
+      <nodes>
+        <classShapeMoniker Id="79cce277-62cf-4811-9e0d-6a75e8a3a247" />
+        <classShapeMoniker Id="f2ee17a2-d864-47ae-b2ae-295f96465f56" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 4.79170090494792); (6.25 : 4.79170090494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/cantinaDataContext/Venda/Venda_ItensVenda" />
+      <nodes>
+        <classShapeMoniker Id="cfc0a1d0-79f2-48f8-9309-0174fb5d1ee0" />
+        <classShapeMoniker Id="f2ee17a2-d864-47ae-b2ae-295f96465f56" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

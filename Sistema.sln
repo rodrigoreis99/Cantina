@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cantina", "Cantina\Cantina.csproj", "{BDD9C3E7-859D-4896-BD83-07D2A4164E4E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cantina.DAL", "cantina.DAL\cantina.DAL.csproj", "{2884DC7A-3211-440A-A2E2-E7BFED95F25F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{BDD9C3E7-859D-4896-BD83-07D2A4164E4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDD9C3E7-859D-4896-BD83-07D2A4164E4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDD9C3E7-859D-4896-BD83-07D2A4164E4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2884DC7A-3211-440A-A2E2-E7BFED95F25F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2884DC7A-3211-440A-A2E2-E7BFED95F25F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2884DC7A-3211-440A-A2E2-E7BFED95F25F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2884DC7A-3211-440A-A2E2-E7BFED95F25F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

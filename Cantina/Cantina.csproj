@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,11 +47,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frm_alunos.cs">
+    <Compile Include="frm_aluno.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_alunos.Designer.cs">
-      <DependentUpon>frm_alunos.cs</DependentUpon>
+    <Compile Include="frm_aluno.Designer.cs">
+      <DependentUpon>frm_aluno.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_categorias.cs">
       <SubType>Form</SubType>
@@ -58,28 +59,49 @@
     <Compile Include="frm_categorias.Designer.cs">
       <DependentUpon>frm_categorias.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_consultaProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_consultaProdutos.Designer.cs">
+      <DependentUpon>frm_consultaProdutos.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_menu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_menu.Designer.cs">
       <DependentUpon>frm_menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_produto.cs">
+    <Compile Include="frm_produtos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_produto.Designer.cs">
-      <DependentUpon>frm_produto.cs</DependentUpon>
+    <Compile Include="frm_produtos.Designer.cs">
+      <DependentUpon>frm_produtos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_venda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_venda.Designer.cs">
+      <DependentUpon>frm_venda.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm_aluno.resx">
+      <DependentUpon>frm_aluno.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_categorias.resx">
       <DependentUpon>frm_categorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_consultaProdutos.resx">
+      <DependentUpon>frm_consultaProdutos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_menu.resx">
       <DependentUpon>frm_menu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_produto.resx">
-      <DependentUpon>frm_produto.cs</DependentUpon>
+    <EmbeddedResource Include="frm_produtos.resx">
+      <DependentUpon>frm_produtos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_venda.resx">
+      <DependentUpon>frm_venda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -91,6 +113,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Properties\DataSources\cantina.DAL.Aluno.datasource" />
+    <None Include="Properties\DataSources\cantina.DAL.cantinaDataContext.datasource" />
+    <None Include="Properties\DataSources\cantina.DAL.Categoria.datasource" />
+    <None Include="Properties\DataSources\cantina.DAL.ContasReceber.datasource" />
+    <None Include="Properties\DataSources\cantina.DAL.DataContextFactory.datasource" />
+    <None Include="Properties\DataSources\cantina.DAL.ItensVenda.datasource" />
+    <None Include="Properties\DataSources\cantina.DAL.Produto.datasource" />
+    <None Include="Properties\DataSources\cantina.DAL.StatusPagamento.datasource" />
+    <None Include="Properties\DataSources\cantina.DAL.Venda.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -112,6 +143,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="images\Icones finanças\Icones\cad_produtos 40x40.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icones\baby64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icones\cadastro clientes 40 x 40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\cantina.DAL\cantina.DAL.csproj">
+      <Project>{2884dc7a-3211-440a-a2e2-e7bfed95f25f}</Project>
+      <Name>cantina.DAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
