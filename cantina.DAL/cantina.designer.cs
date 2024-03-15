@@ -607,7 +607,7 @@ namespace cantina.DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="tb_status_tb_contas_receber", Storage="_tb_status", ThisKey="CodigoStatus", OtherKey="Codigo", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="StatusPagamento_ContasReceber", Storage="_tb_status", ThisKey="CodigoStatus", OtherKey="Codigo", IsForeignKey=true)]
 		public StatusPagamento StatusPagamento
 		{
 			get
@@ -641,7 +641,7 @@ namespace cantina.DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Venda_tb_contas_receber", Storage="_tb_venda", ThisKey="CodigoVenda", OtherKey="CodigoVenda", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Venda_ContasReceber", Storage="_tb_venda", ThisKey="CodigoVenda", OtherKey="CodigoVenda", IsForeignKey=true)]
 		public Venda Venda
 		{
 			get
@@ -1195,7 +1195,7 @@ namespace cantina.DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="tb_status_tb_contas_receber", Storage="_tb_contas_receber", ThisKey="Codigo", OtherKey="CodigoStatus")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="StatusPagamento_ContasReceber", Storage="_tb_contas_receber", ThisKey="Codigo", OtherKey="CodigoStatus")]
 		public EntitySet<ContasReceber> ContasReceber
 		{
 			get
@@ -1255,7 +1255,7 @@ namespace cantina.DAL
 		
 		private System.Nullable<decimal> _valor_pago;
 		
-		private System.Nullable<int> _id_pessoa;
+		private System.Nullable<int> _id_aluno;
 		
 		private EntitySet<ContasReceber> _tb_contas_receber;
 		
@@ -1367,27 +1367,27 @@ namespace cantina.DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="id_pessoa", Storage="_id_pessoa", DbType="Int")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="id_aluno", Storage="_id_aluno", DbType="Int")]
 		public System.Nullable<int> CodigoAluno
 		{
 			get
 			{
-				return this._id_pessoa;
+				return this._id_aluno;
 			}
 			set
 			{
-				if ((this._id_pessoa != value))
+				if ((this._id_aluno != value))
 				{
 					this.OnCodigoAlunoChanging(value);
 					this.SendPropertyChanging();
-					this._id_pessoa = value;
+					this._id_aluno = value;
 					this.SendPropertyChanged("CodigoAluno");
 					this.OnCodigoAlunoChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Venda_tb_contas_receber", Storage="_tb_contas_receber", ThisKey="CodigoVenda", OtherKey="CodigoVenda")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Venda_ContasReceber", Storage="_tb_contas_receber", ThisKey="CodigoVenda", OtherKey="CodigoVenda")]
 		public EntitySet<ContasReceber> ContasReceber
 		{
 			get
@@ -1436,11 +1436,11 @@ namespace cantina.DAL
 					if ((value != null))
 					{
 						value.Venda.Add(this);
-						this._id_pessoa = value.Codigo;
+						this._id_aluno = value.Codigo;
 					}
 					else
 					{
-						this._id_pessoa = default(Nullable<int>);
+						this._id_aluno = default(Nullable<int>);
 					}
 					this.SendPropertyChanged("Aluno");
 				}

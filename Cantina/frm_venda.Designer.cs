@@ -39,9 +39,9 @@
             System.Windows.Forms.Label valorLabel;
             System.Windows.Forms.Label quantidadeLabel;
             System.Windows.Forms.Label codigoVendaLabel;
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.Label serieLabel;
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.vendaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.CB_aluno = new System.Windows.Forms.ComboBox();
             this.alunoBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -183,12 +183,22 @@
             codigoVendaLabel.TabIndex = 10;
             codigoVendaLabel.Text = "Codigo Venda:";
             // 
+            // serieLabel
+            // 
+            serieLabel.AutoSize = true;
+            serieLabel.Location = new System.Drawing.Point(367, 29);
+            serieLabel.Name = "serieLabel";
+            serieLabel.Size = new System.Drawing.Size(34, 13);
+            serieLabel.TabIndex = 4;
+            serieLabel.Text = "Serie:";
+            // 
             // vendaBindingSource
             // 
             this.vendaBindingSource.DataSource = typeof(cantina.DAL.Venda);
             // 
             // CB_aluno
             // 
+            this.CB_aluno.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CB_aluno.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.vendaBindingSource, "CodigoAluno", true));
             this.CB_aluno.DataSource = this.alunoBindingSource;
             this.CB_aluno.DisplayMember = "Nome";
@@ -197,7 +207,7 @@
             this.CB_aluno.Location = new System.Drawing.Point(233, 26);
             this.CB_aluno.Name = "CB_aluno";
             this.CB_aluno.Size = new System.Drawing.Size(121, 21);
-            this.CB_aluno.TabIndex = 2;
+            this.CB_aluno.TabIndex = 1;
             this.CB_aluno.ValueMember = "Codigo";
             // 
             // alunoBindingSource
@@ -206,12 +216,15 @@
             // 
             // btn_novaVenda
             // 
+            this.btn_novaVenda.BackColor = System.Drawing.Color.IndianRed;
+            this.btn_novaVenda.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_novaVenda.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_novaVenda.Location = new System.Drawing.Point(461, 26);
             this.btn_novaVenda.Name = "btn_novaVenda";
             this.btn_novaVenda.Size = new System.Drawing.Size(75, 23);
-            this.btn_novaVenda.TabIndex = 3;
+            this.btn_novaVenda.TabIndex = 2;
             this.btn_novaVenda.Text = "Nova Venda";
-            this.btn_novaVenda.UseVisualStyleBackColor = true;
+            this.btn_novaVenda.UseVisualStyleBackColor = false;
             this.btn_novaVenda.Click += new System.EventHandler(this.btn_novaVenda_Click);
             // 
             // groupBox1
@@ -250,23 +263,29 @@
             // 
             // btn_novoItem
             // 
+            this.btn_novoItem.BackColor = System.Drawing.Color.IndianRed;
+            this.btn_novoItem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_novoItem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_novoItem.Location = new System.Drawing.Point(227, 116);
             this.btn_novoItem.Name = "btn_novoItem";
             this.btn_novoItem.Size = new System.Drawing.Size(75, 23);
-            this.btn_novoItem.TabIndex = 13;
+            this.btn_novoItem.TabIndex = 7;
             this.btn_novoItem.Text = "Novo Item";
-            this.btn_novoItem.UseVisualStyleBackColor = true;
+            this.btn_novoItem.UseVisualStyleBackColor = false;
             this.btn_novoItem.Click += new System.EventHandler(this.btn_novoItem_Click_1);
             // 
             // btn_finalizar
             // 
+            this.btn_finalizar.BackColor = System.Drawing.Color.IndianRed;
+            this.btn_finalizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_finalizar.Enabled = false;
+            this.btn_finalizar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_finalizar.Location = new System.Drawing.Point(507, 573);
             this.btn_finalizar.Name = "btn_finalizar";
             this.btn_finalizar.Size = new System.Drawing.Size(105, 23);
-            this.btn_finalizar.TabIndex = 23;
+            this.btn_finalizar.TabIndex = 10;
             this.btn_finalizar.Text = "Finalizar";
-            this.btn_finalizar.UseVisualStyleBackColor = true;
+            this.btn_finalizar.UseVisualStyleBackColor = false;
             this.btn_finalizar.Click += new System.EventHandler(this.btn_finalizar_Click);
             // 
             // CB_produto
@@ -278,7 +297,7 @@
             this.CB_produto.Location = new System.Drawing.Point(102, 55);
             this.CB_produto.Name = "CB_produto";
             this.CB_produto.Size = new System.Drawing.Size(100, 21);
-            this.CB_produto.TabIndex = 18;
+            this.CB_produto.TabIndex = 4;
             this.CB_produto.ValueMember = "Codigo";
             this.CB_produto.SelectedIndexChanged += new System.EventHandler(this.CB_produto_SelectedIndexChanged);
             // 
@@ -309,7 +328,7 @@
             this.valorTextBox.Name = "valorTextBox";
             this.valorTextBox.ReadOnly = true;
             this.valorTextBox.Size = new System.Drawing.Size(100, 20);
-            this.valorTextBox.TabIndex = 16;
+            this.valorTextBox.TabIndex = 6;
             // 
             // CB_pgto
             // 
@@ -331,13 +350,16 @@
             // 
             // btn_imprimir
             // 
+            this.btn_imprimir.BackColor = System.Drawing.Color.IndianRed;
+            this.btn_imprimir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_imprimir.Enabled = false;
+            this.btn_imprimir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_imprimir.Location = new System.Drawing.Point(16, 571);
             this.btn_imprimir.Name = "btn_imprimir";
             this.btn_imprimir.Size = new System.Drawing.Size(105, 23);
             this.btn_imprimir.TabIndex = 18;
             this.btn_imprimir.Text = "Imprimir";
-            this.btn_imprimir.UseVisualStyleBackColor = true;
+            this.btn_imprimir.UseVisualStyleBackColor = false;
             this.btn_imprimir.Click += new System.EventHandler(this.btn_imprimir_Click);
             // 
             // txt_quantidade
@@ -346,17 +368,20 @@
             this.txt_quantidade.Location = new System.Drawing.Point(102, 85);
             this.txt_quantidade.Name = "txt_quantidade";
             this.txt_quantidade.Size = new System.Drawing.Size(100, 20);
-            this.txt_quantidade.TabIndex = 14;
+            this.txt_quantidade.TabIndex = 5;
             // 
             // btn_finalizarVenda
             // 
+            this.btn_finalizarVenda.BackColor = System.Drawing.Color.IndianRed;
+            this.btn_finalizarVenda.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_finalizarVenda.Enabled = false;
+            this.btn_finalizarVenda.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_finalizarVenda.Location = new System.Drawing.Point(16, 542);
             this.btn_finalizarVenda.Name = "btn_finalizarVenda";
             this.btn_finalizarVenda.Size = new System.Drawing.Size(106, 23);
-            this.btn_finalizarVenda.TabIndex = 17;
+            this.btn_finalizarVenda.TabIndex = 8;
             this.btn_finalizarVenda.Text = "Finalizar Venda";
-            this.btn_finalizarVenda.UseVisualStyleBackColor = true;
+            this.btn_finalizarVenda.UseVisualStyleBackColor = false;
             this.btn_finalizarVenda.Click += new System.EventHandler(this.btn_finalizarVenda_Click);
             // 
             // txt_codigo
@@ -366,16 +391,19 @@
             this.txt_codigo.Name = "txt_codigo";
             this.txt_codigo.ReadOnly = true;
             this.txt_codigo.Size = new System.Drawing.Size(100, 20);
-            this.txt_codigo.TabIndex = 11;
+            this.txt_codigo.TabIndex = 3;
             // 
             // btn_finalizarPedido
             // 
+            this.btn_finalizarPedido.BackColor = System.Drawing.Color.IndianRed;
+            this.btn_finalizarPedido.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_finalizarPedido.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_finalizarPedido.Location = new System.Drawing.Point(16, 515);
             this.btn_finalizarPedido.Name = "btn_finalizarPedido";
             this.btn_finalizarPedido.Size = new System.Drawing.Size(106, 23);
-            this.btn_finalizarPedido.TabIndex = 16;
+            this.btn_finalizarPedido.TabIndex = 8;
             this.btn_finalizarPedido.Text = "Finalizar Pedido";
-            this.btn_finalizarPedido.UseVisualStyleBackColor = true;
+            this.btn_finalizarPedido.UseVisualStyleBackColor = false;
             this.btn_finalizarPedido.Click += new System.EventHandler(this.btn_finalizarPedido_Click);
             // 
             // txt_valorPago
@@ -410,6 +438,7 @@
             this.DG_vendas.AllowUserToAddRows = false;
             this.DG_vendas.AllowUserToDeleteRows = false;
             this.DG_vendas.AutoGenerateColumns = false;
+            this.DG_vendas.BackgroundColor = System.Drawing.Color.RosyBrown;
             this.DG_vendas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DG_vendas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn2,
@@ -451,30 +480,21 @@
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.DataPropertyName = "Valor";
-            dataGridViewCellStyle5.Format = "C2";
-            dataGridViewCellStyle5.NullValue = null;
-            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle3.Format = "C2";
+            dataGridViewCellStyle3.NullValue = null;
+            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewTextBoxColumn4.HeaderText = "Valor";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
             // 
             // valorTotal
             // 
-            dataGridViewCellStyle6.Format = "C2";
-            dataGridViewCellStyle6.NullValue = null;
-            this.valorTotal.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle4.Format = "C2";
+            dataGridViewCellStyle4.NullValue = null;
+            this.valorTotal.DefaultCellStyle = dataGridViewCellStyle4;
             this.valorTotal.HeaderText = "Valor Total";
             this.valorTotal.Name = "valorTotal";
             this.valorTotal.ReadOnly = true;
-            // 
-            // serieLabel
-            // 
-            serieLabel.AutoSize = true;
-            serieLabel.Location = new System.Drawing.Point(367, 29);
-            serieLabel.Name = "serieLabel";
-            serieLabel.Size = new System.Drawing.Size(34, 13);
-            serieLabel.TabIndex = 4;
-            serieLabel.Text = "Serie:";
             // 
             // lbl_serie
             // 
@@ -489,6 +509,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.RosyBrown;
             this.ClientSize = new System.Drawing.Size(754, 691);
             this.Controls.Add(serieLabel);
             this.Controls.Add(this.lbl_serie);

@@ -48,6 +48,7 @@
             this.DG_categoria.AllowUserToAddRows = false;
             this.DG_categoria.AllowUserToDeleteRows = false;
             this.DG_categoria.AutoGenerateColumns = false;
+            this.DG_categoria.BackgroundColor = System.Drawing.Color.IndianRed;
             this.DG_categoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DG_categoria.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.codigoDataGridViewTextBoxColumn,
@@ -79,42 +80,54 @@
             // 
             // btn_cancelar
             // 
+            this.btn_cancelar.BackColor = System.Drawing.Color.IndianRed;
+            this.btn_cancelar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_cancelar.Location = new System.Drawing.Point(563, 99);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(75, 23);
-            this.btn_cancelar.TabIndex = 5;
+            this.btn_cancelar.TabIndex = 4;
             this.btn_cancelar.Text = "Cancelar";
-            this.btn_cancelar.UseVisualStyleBackColor = true;
+            this.btn_cancelar.UseVisualStyleBackColor = false;
             this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
             // 
             // btn_excluir
             // 
+            this.btn_excluir.BackColor = System.Drawing.Color.IndianRed;
+            this.btn_excluir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_excluir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_excluir.Location = new System.Drawing.Point(425, 99);
             this.btn_excluir.Name = "btn_excluir";
             this.btn_excluir.Size = new System.Drawing.Size(75, 23);
-            this.btn_excluir.TabIndex = 4;
+            this.btn_excluir.TabIndex = 3;
             this.btn_excluir.Text = "Excluir";
-            this.btn_excluir.UseVisualStyleBackColor = true;
+            this.btn_excluir.UseVisualStyleBackColor = false;
             this.btn_excluir.Click += new System.EventHandler(this.btn_excluir_Click);
             // 
             // btn_cadastrar
             // 
+            this.btn_cadastrar.BackColor = System.Drawing.Color.IndianRed;
+            this.btn_cadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_cadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_cadastrar.Location = new System.Drawing.Point(279, 99);
             this.btn_cadastrar.Name = "btn_cadastrar";
             this.btn_cadastrar.Size = new System.Drawing.Size(75, 23);
-            this.btn_cadastrar.TabIndex = 3;
+            this.btn_cadastrar.TabIndex = 2;
             this.btn_cadastrar.Text = "Cadastrar";
-            this.btn_cadastrar.UseVisualStyleBackColor = true;
+            this.btn_cadastrar.UseVisualStyleBackColor = false;
             this.btn_cadastrar.Click += new System.EventHandler(this.btn_cadastrar_Click);
             // 
             // btn_novo
             // 
+            this.btn_novo.BackColor = System.Drawing.Color.IndianRed;
+            this.btn_novo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_novo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_novo.Location = new System.Drawing.Point(132, 99);
             this.btn_novo.Name = "btn_novo";
             this.btn_novo.Size = new System.Drawing.Size(75, 23);
-            this.btn_novo.TabIndex = 2;
+            this.btn_novo.TabIndex = 1;
             this.btn_novo.Text = "Novo";
-            this.btn_novo.UseVisualStyleBackColor = true;
+            this.btn_novo.UseVisualStyleBackColor = false;
             this.btn_novo.Click += new System.EventHandler(this.btn_novo_Click);
             // 
             // txt_categoria
@@ -138,6 +151,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.RosyBrown;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.DG_categoria);
             this.Controls.Add(this.btn_cancelar);
@@ -148,7 +162,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frm_categorias";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frm_categorias";
+            this.Text = "Cadastro de Categoria";
             this.Load += new System.EventHandler(this.frm_categorias_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DG_categoria)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoriaBindingSource)).EndInit();

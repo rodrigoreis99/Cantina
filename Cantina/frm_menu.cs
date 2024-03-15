@@ -65,5 +65,35 @@ namespace Cantina
             frm_venda frm = new frm_venda();
             frm.Show();
         }
+
+        private void btn_venda_Click(object sender, EventArgs e)
+        {
+            frm_venda frm = new frm_venda();
+            frm.Show();
+        }
+
+        private void produtosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_RelProdutos frm = new frm_RelProdutos();
+            frm.Show();
+        }
+
+        private void vendasToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frm_relatorioVendas frm = new frm_relatorioVendas();
+            frm.Show();
+        }
+
+        private void btn_ConsultaProduto_Click(object sender, EventArgs e)
+        {
+            frm_consultaProdutos frm = new frm_consultaProdutos();
+            frm.Show();
+        }
+
+        private void btn_relatorioVendas_Click(object sender, EventArgs e)
+        {
+            frm_relatorioVendas frm = new frm_relatorioVendas();
+            frm.Show();
+        }
     }
 }

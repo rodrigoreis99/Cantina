@@ -33,9 +33,29 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,6 +67,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DS_Completo.cs">
+      <DependentUpon>DS_Completo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Completo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Completo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Rel_Produtos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Rel_Produtos.xsd</DependentUpon>
+    </Compile>
     <Compile Include="frm_aluno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,14 +110,72 @@
     <Compile Include="frm_produtos.Designer.cs">
       <DependentUpon>frm_produtos.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_relatorioVendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_relatorioVendas.Designer.cs">
+      <DependentUpon>frm_relatorioVendas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_RelProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_RelProdutos.Designer.cs">
+      <DependentUpon>frm_RelProdutos.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_venda.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_venda.Designer.cs">
       <DependentUpon>frm_venda.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modulo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Content Include="Content\all.css" />
+    <Content Include="Content\all.min.css" />
+    <Content Include="Content\brands.css" />
+    <Content Include="Content\brands.min.css" />
+    <Content Include="Content\fontawesome.css" />
+    <Content Include="Content\fontawesome.min.css" />
+    <Content Include="Content\regular.css" />
+    <Content Include="Content\regular.min.css" />
+    <Content Include="Content\solid.css" />
+    <Content Include="Content\solid.min.css" />
+    <Content Include="Content\svg-with-js.css" />
+    <Content Include="Content\svg-with-js.min.css" />
+    <Content Include="Content\v4-shims.css" />
+    <Content Include="Content\v4-shims.min.css" />
+    <None Include="Resources\user_icon_259662.png" />
+    <None Include="Resources\dollar_money_icon_259677.png" />
+    <None Include="Resources\document_icon_259655.png" />
+    <None Include="Resources\demographics_audience_customer_segmentation_market_research_profiling_customer_personas_icon_260963.png" />
+    <None Include="Resources\collection_statistical_data_analysis_market_research_big_data_icon_260965.png" />
+    <None Include="Resources\look_view_format_target_document_scope_vision_icon_261579.png" />
+    <None Include="Resources\online_ecommerce_buy_bag_cart_basket_shopping_icon_261680 %281%29.png" />
+    <None Include="Resources\bag_icon_259652.png" />
+    <None Include="Resources\dora2.png" />
+    <None Include="Resources\dora37.png" />
+    <None Include="Resources\dora37-removebg-preview.png" />
+    <None Include="Resources\search_icon_259672.png" />
+    <None Include="images\icones\new icon\16x16\align_center_16.bmp" />
+    <Content Include="Scripts\fontawesome\all.js" />
+    <Content Include="Scripts\fontawesome\all.min.js" />
+    <Content Include="Scripts\fontawesome\brands.js" />
+    <Content Include="Scripts\fontawesome\brands.min.js" />
+    <Content Include="Scripts\fontawesome\conflict-detection.js" />
+    <Content Include="Scripts\fontawesome\conflict-detection.min.js" />
+    <Content Include="Scripts\fontawesome\fontawesome.js" />
+    <Content Include="Scripts\fontawesome\fontawesome.min.js" />
+    <Content Include="Scripts\fontawesome\regular.js" />
+    <Content Include="Scripts\fontawesome\regular.min.js" />
+    <Content Include="Scripts\fontawesome\solid.js" />
+    <Content Include="Scripts\fontawesome\solid.min.js" />
+    <Content Include="Scripts\fontawesome\v4-shims.js" />
+    <Content Include="Scripts\fontawesome\v4-shims.min.js" />
+    <Content Include="webfonts\fa-brands-400.svg" />
+    <Content Include="webfonts\fa-regular-400.svg" />
+    <Content Include="webfonts\fa-solid-900.svg" />
     <EmbeddedResource Include="frm_aluno.resx">
       <DependentUpon>frm_aluno.cs</DependentUpon>
     </EmbeddedResource>
@@ -100,6 +191,12 @@
     <EmbeddedResource Include="frm_produtos.resx">
       <DependentUpon>frm_produtos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_relatorioVendas.resx">
+      <DependentUpon>frm_relatorioVendas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_RelProdutos.resx">
+      <DependentUpon>frm_RelProdutos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_venda.resx">
       <DependentUpon>frm_venda.cs</DependentUpon>
     </EmbeddedResource>
@@ -113,6 +210,36 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Relatorios\Rel_produtos.rdlc" />
+    <EmbeddedResource Include="Relatorios\Report2.rdlc" />
+    <None Include="DS_Completo.xsc">
+      <DependentUpon>DS_Completo.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Completo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Completo.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_Completo.xss">
+      <DependentUpon>DS_Completo.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Rel_Produtos.xsc">
+      <DependentUpon>DS_Rel_Produtos.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Rel_Produtos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Rel_Produtos.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_Rel_Produtos.xss">
+      <DependentUpon>DS_Rel_Produtos.xsd</DependentUpon>
+    </None>
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <None Include="packages.config" />
     <None Include="Properties\DataSources\cantina.DAL.Aluno.datasource" />
     <None Include="Properties\DataSources\cantina.DAL.cantinaDataContext.datasource" />
     <None Include="Properties\DataSources\cantina.DAL.Categoria.datasource" />
@@ -122,6 +249,7 @@
     <None Include="Properties\DataSources\cantina.DAL.Produto.datasource" />
     <None Include="Properties\DataSources\cantina.DAL.StatusPagamento.datasource" />
     <None Include="Properties\DataSources\cantina.DAL.Venda.datasource" />
+    <None Include="Properties\DataSources\frm_produtos.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -131,6 +259,18 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="webfonts\fa-brands-400.eot" />
+    <None Include="webfonts\fa-brands-400.ttf" />
+    <None Include="webfonts\fa-brands-400.woff" />
+    <None Include="webfonts\fa-brands-400.woff2" />
+    <None Include="webfonts\fa-regular-400.eot" />
+    <None Include="webfonts\fa-regular-400.ttf" />
+    <None Include="webfonts\fa-regular-400.woff" />
+    <None Include="webfonts\fa-regular-400.woff2" />
+    <None Include="webfonts\fa-solid-900.eot" />
+    <None Include="webfonts\fa-solid-900.ttf" />
+    <None Include="webfonts\fa-solid-900.woff" />
+    <None Include="webfonts\fa-solid-900.woff2" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -156,5 +296,54 @@
       <Name>cantina.DAL</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icones\budget64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icones\money 40x40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\login escuro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icones\Search-Globe64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icones\icones\add_16.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cantina.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cantina2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icones\WhatsApp Image 2024-03-14 at 11.05.48 %281%29.jpeg" />
+    <None Include="images\icones\WhatsApp Image 2024-03-14 at 11.05.48 %282%29.jpeg" />
+    <None Include="images\icones\WhatsApp Image 2024-03-14 at 11.05.48 %283%29.jpeg" />
+    <None Include="images\icones\WhatsApp Image 2024-03-14 at 11.05.48.jpeg" />
+    <None Include="images\icones\basket.png" />
+    <None Include="images\Icones finanças\Icones\compras 40x40.bmp" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

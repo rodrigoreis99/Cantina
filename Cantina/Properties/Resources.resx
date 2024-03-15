@@ -118,19 +118,97 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="basket" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\icones\basket.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\icones\icones\add_16.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login escuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\login escuro.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="look_view_format_target_document_scope_vision_icon_261579" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\look_view_format_target_document_scope_vision_icon_261579.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="entrada produtos 40x40" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\Icones finanças\Icones\entrada produtos 40x40.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fundo sistema azul" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\fundo sistema azul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="collection_statistical_data_analysis_market_research_big_data_icon_260965" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\collection_statistical_data_analysis_market_research_big_data_icon_260965.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="baby64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\icones\baby64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="compras 40x40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\Icones finanças\Icones\compras 40x40.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="money 40x40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\icones\money 40x40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="document_icon_259655" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\document_icon_259655.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cad_produtos 40x40" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\Icones finanças\Icones\cad_produtos 40x40.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="user_icon_259662" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user_icon_259662.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dora2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dora2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dollar_money_icon_259677" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dollar_money_icon_259677.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Search-Globe64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\icones\Search-Globe64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fundo sistema azul" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\fundo sistema azul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="online_ecommerce_buy_bag_cart_basket_shopping_icon_261680 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\online_ecommerce_buy_bag_cart_basket_shopping_icon_261680 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cantina" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cantina.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cantina2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cantina2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dora37" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dora37.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dora37-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dora37-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WhatsApp Image 2024-03-14 at 11.05.48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\icones\WhatsApp Image 2024-03-14 at 11.05.48.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="search_icon_259672" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search_icon_259672.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WhatsApp Image 2024-03-14 at 11.05.48 (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\icones\WhatsApp Image 2024-03-14 at 11.05.48 (3).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="cadastro clientes 40 x 40" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\icones\cadastro clientes 40 x 40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bag_icon_259652" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bag_icon_259652.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="baby64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\icones\baby64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WhatsApp Image 2024-03-14 at 11.05.48 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\icones\WhatsApp Image 2024-03-14 at 11.05.48 (1).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WhatsApp Image 2024-03-14 at 11.05.48 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\icones\WhatsApp Image 2024-03-14 at 11.05.48 (2).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="budget64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\icones\budget64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="demographics_audience_customer_segmentation_market_research_profiling_customer_personas_icon_260963" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\demographics_audience_customer_segmentation_market_research_profiling_customer_personas_icon_260963.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="align_center_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\icones\new icon\16x16\align_center_16.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -25,8 +25,8 @@
       <Column Name="data_pagamento" Member="DataPagamento" Storage="_data_pagamento" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
       <Column Name="id_venda" Member="CodigoVenda" Storage="_id_venda" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="id_status" Member="CodigoStatus" Storage="_id_status" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Association Name="tb_status_tb_contas_receber" Member="StatusPagamento" Storage="_tb_status" ThisKey="CodigoStatus" OtherKey="Codigo" Type="StatusPagamento" IsForeignKey="true" />
-      <Association Name="Venda_tb_contas_receber" Member="Venda" Storage="_tb_venda" ThisKey="CodigoVenda" OtherKey="CodigoVenda" Type="Venda" IsForeignKey="true" />
+      <Association Name="StatusPagamento_ContasReceber" Member="StatusPagamento" Storage="_tb_status" ThisKey="CodigoStatus" OtherKey="Codigo" Type="StatusPagamento" IsForeignKey="true" />
+      <Association Name="Venda_ContasReceber" Member="Venda" Storage="_tb_venda" ThisKey="CodigoVenda" OtherKey="CodigoVenda" Type="Venda" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.tb_itens_venda" Member="ItensVenda">
@@ -54,7 +54,7 @@
     <Type Name="StatusPagamento">
       <Column Name="id_status" Member="Codigo" Storage="_id_status" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="status" Member="Status" Storage="_status" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Association Name="tb_status_tb_contas_receber" Member="ContasReceber" Storage="_tb_contas_receber" ThisKey="Codigo" OtherKey="CodigoStatus" Type="ContasReceber" />
+      <Association Name="StatusPagamento_ContasReceber" Member="ContasReceber" Storage="_tb_contas_receber" ThisKey="Codigo" OtherKey="CodigoStatus" Type="ContasReceber" />
     </Type>
   </Table>
   <Table Name="dbo.tb_venda" Member="Venda">
@@ -63,8 +63,8 @@
       <Column Name="valor" Member="Valor" Storage="_valor" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
       <Column Name="desconto" Member="Desconto" Storage="_desconto" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
       <Column Name="valor_pago" Member="ValorPago" Storage="_valor_pago" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
-      <Column Name="id_pessoa" Member="CodigoAluno" Storage="_id_pessoa" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Association Name="Venda_tb_contas_receber" Member="ContasReceber" Storage="_tb_contas_receber" ThisKey="CodigoVenda" OtherKey="CodigoVenda" Type="ContasReceber" />
+      <Column Name="id_aluno" Member="CodigoAluno" Storage="_id_aluno" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Venda_ContasReceber" Member="ContasReceber" Storage="_tb_contas_receber" ThisKey="CodigoVenda" OtherKey="CodigoVenda" Type="ContasReceber" />
       <Association Name="Venda_ItensVenda" Member="ItensVenda" Storage="_tb_itens_venda" ThisKey="CodigoVenda" OtherKey="CodigoVenda" Type="ItensVenda" />
       <Association Name="Aluno_Venda" Member="Aluno" Storage="_tb_aluno" ThisKey="CodigoAluno" OtherKey="Codigo" Type="Aluno" IsForeignKey="true" />
     </Type>
