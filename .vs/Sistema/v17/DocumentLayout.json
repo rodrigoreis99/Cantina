@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Dev\\SistemaCantina\\cantinaDaMam\u00E3e\\Sistema\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BDD9C3E7-859D-4896-BD83-07D2A4164E4E}|Cantina\\Cantina.csproj|c:\\dev\\sistemacantina\\cantinadamam\u00E3e\\sistema\\cantina\\frm_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDD9C3E7-859D-4896-BD83-07D2A4164E4E}|Cantina\\Cantina.csproj|solutionrelative:cantina\\frm_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BDD9C3E7-859D-4896-BD83-07D2A4164E4E}|Cantina\\Cantina.csproj|c:\\dev\\sistemacantina\\cantinadamam\u00E3e\\sistema\\cantina\\frm_venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BDD9C3E7-859D-4896-BD83-07D2A4164E4E}|Cantina\\Cantina.csproj|solutionrelative:cantina\\frm_venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BDD9C3E7-859D-4896-BD83-07D2A4164E4E}|Cantina\\Cantina.csproj|c:\\dev\\sistemacantina\\cantinadamam\u00E3e\\sistema\\cantina\\frm_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{BDD9C3E7-859D-4896-BD83-07D2A4164E4E}|Cantina\\Cantina.csproj|c:\\dev\\sistemacantina\\cantinadamam\u00E3e\\sistema\\cantina\\frm_produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BDD9C3E7-859D-4896-BD83-07D2A4164E4E}|Cantina\\Cantina.csproj|solutionrelative:cantina\\frm_produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDD9C3E7-859D-4896-BD83-07D2A4164E4E}|Cantina\\Cantina.csproj|c:\\dev\\sistemacantina\\cantinadamam\u00E3e\\sistema\\cantina\\relatorios\\report2.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}",
+      "RelativeMoniker": "D:0:0:{BDD9C3E7-859D-4896-BD83-07D2A4164E4E}|Cantina\\Cantina.csproj|solutionrelative:cantina\\relatorios\\report2.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDD9C3E7-859D-4896-BD83-07D2A4164E4E}|Cantina\\Cantina.csproj|C:\\Dev\\SistemaCantina\\cantinaDaMam\u00E3e\\Sistema\\cantina\\frm_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BDD9C3E7-859D-4896-BD83-07D2A4164E4E}|Cantina\\Cantina.csproj|solutionrelative:cantina\\frm_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDD9C3E7-859D-4896-BD83-07D2A4164E4E}|Cantina\\Cantina.csproj|c:\\dev\\sistemacantina\\cantinadamam\u00E3e\\sistema\\cantina\\frm_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDD9C3E7-859D-4896-BD83-07D2A4164E4E}|Cantina\\Cantina.csproj|solutionrelative:cantina\\frm_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,19 +39,55 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "frm_venda.cs [Design]",
+              "DocumentMoniker": "C:\\Dev\\SistemaCantina\\cantinaDaMam\u00E3e\\Sistema\\Cantina\\frm_venda.cs",
+              "RelativeDocumentMoniker": "Cantina\\frm_venda.cs",
+              "ToolTip": "C:\\Dev\\SistemaCantina\\cantinaDaMam\u00E3e\\Sistema\\Cantina\\frm_venda.cs [Design]",
+              "RelativeToolTip": "Cantina\\frm_venda.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T00:32:20.501Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frm_produtos.cs [Design]",
+              "DocumentMoniker": "C:\\Dev\\SistemaCantina\\cantinaDaMam\u00E3e\\Sistema\\Cantina\\frm_produtos.cs",
+              "RelativeDocumentMoniker": "Cantina\\frm_produtos.cs",
+              "ToolTip": "C:\\Dev\\SistemaCantina\\cantinaDaMam\u00E3e\\Sistema\\Cantina\\frm_produtos.cs [Design]",
+              "RelativeToolTip": "Cantina\\frm_produtos.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T00:25:22.26Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Report2.rdlc [Criar]",
+              "DocumentMoniker": "C:\\Dev\\SistemaCantina\\cantinaDaMam\u00E3e\\Sistema\\Cantina\\Relatorios\\Report2.rdlc",
+              "RelativeDocumentMoniker": "Cantina\\Relatorios\\Report2.rdlc",
+              "ToolTip": "C:\\Dev\\SistemaCantina\\cantinaDaMam\u00E3e\\Sistema\\Cantina\\Relatorios\\Report2.rdlc [Criar]",
+              "RelativeToolTip": "Cantina\\Relatorios\\Report2.rdlc [Criar]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001755|",
+              "WhenOpened": "2024-03-27T23:46:51.521Z",
+              "EditorCaption": " [Criar]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "frm_menu.cs",
               "DocumentMoniker": "C:\\Dev\\SistemaCantina\\cantinaDaMam\u00E3e\\Sistema\\Cantina\\frm_menu.cs",
               "RelativeDocumentMoniker": "Cantina\\frm_menu.cs",
               "ToolTip": "C:\\Dev\\SistemaCantina\\cantinaDaMam\u00E3e\\Sistema\\Cantina\\frm_menu.cs",
               "RelativeToolTip": "Cantina\\frm_menu.cs",
-              "ViewState": "AQIAAFAAAAAAAAAAAAAvwF8AAAAXAAAA",
+              "ViewState": "AQIAAFYAAAAAAAAAAAAEwGEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-15T01:04:39.386Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "frm_menu.cs [Design]",
               "DocumentMoniker": "C:\\Dev\\SistemaCantina\\cantinaDaMam\u00E3e\\Sistema\\Cantina\\frm_menu.cs",
               "RelativeDocumentMoniker": "Cantina\\frm_menu.cs",

@@ -40,8 +40,8 @@
             System.Windows.Forms.Label quantidadeLabel;
             System.Windows.Forms.Label codigoVendaLabel;
             System.Windows.Forms.Label serieLabel;
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.vendaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.CB_aluno = new System.Windows.Forms.ComboBox();
             this.alunoBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -57,7 +57,6 @@
             this.valorTextBox = new System.Windows.Forms.TextBox();
             this.CB_pgto = new System.Windows.Forms.ComboBox();
             this.statusPagamentoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.btn_imprimir = new System.Windows.Forms.Button();
             this.txt_quantidade = new System.Windows.Forms.TextBox();
             this.btn_finalizarVenda = new System.Windows.Forms.Button();
             this.txt_codigo = new System.Windows.Forms.TextBox();
@@ -240,7 +239,6 @@
             this.groupBox1.Controls.Add(this.valorTextBox);
             this.groupBox1.Controls.Add(this.CB_pgto);
             this.groupBox1.Controls.Add(quantidadeLabel);
-            this.groupBox1.Controls.Add(this.btn_imprimir);
             this.groupBox1.Controls.Add(this.txt_quantidade);
             this.groupBox1.Controls.Add(this.btn_finalizarVenda);
             this.groupBox1.Controls.Add(codigoVendaLabel);
@@ -347,20 +345,6 @@
             // statusPagamentoBindingSource
             // 
             this.statusPagamentoBindingSource.DataSource = typeof(cantina.DAL.StatusPagamento);
-            // 
-            // btn_imprimir
-            // 
-            this.btn_imprimir.BackColor = System.Drawing.Color.IndianRed;
-            this.btn_imprimir.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_imprimir.Enabled = false;
-            this.btn_imprimir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_imprimir.Location = new System.Drawing.Point(16, 571);
-            this.btn_imprimir.Name = "btn_imprimir";
-            this.btn_imprimir.Size = new System.Drawing.Size(105, 23);
-            this.btn_imprimir.TabIndex = 18;
-            this.btn_imprimir.Text = "Imprimir";
-            this.btn_imprimir.UseVisualStyleBackColor = false;
-            this.btn_imprimir.Click += new System.EventHandler(this.btn_imprimir_Click);
             // 
             // txt_quantidade
             // 
@@ -480,18 +464,18 @@
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.DataPropertyName = "Valor";
-            dataGridViewCellStyle3.Format = "C2";
-            dataGridViewCellStyle3.NullValue = null;
-            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Format = "C2";
+            dataGridViewCellStyle1.NullValue = null;
+            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewTextBoxColumn4.HeaderText = "Valor";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
             // 
             // valorTotal
             // 
-            dataGridViewCellStyle4.Format = "C2";
-            dataGridViewCellStyle4.NullValue = null;
-            this.valorTotal.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Format = "C2";
+            dataGridViewCellStyle2.NullValue = null;
+            this.valorTotal.DefaultCellStyle = dataGridViewCellStyle2;
             this.valorTotal.HeaderText = "Valor Total";
             this.valorTotal.Name = "valorTotal";
             this.valorTotal.ReadOnly = true;
@@ -553,7 +537,6 @@
         private System.Windows.Forms.TextBox txt_valorPago;
         private System.Windows.Forms.TextBox txt_desconto;
         private System.Windows.Forms.TextBox txt_valor;
-        private System.Windows.Forms.Button btn_imprimir;
         private System.Windows.Forms.Button btn_finalizarVenda;
         private System.Windows.Forms.Button btn_finalizarPedido;
         private System.Windows.Forms.ComboBox CB_pgto;
